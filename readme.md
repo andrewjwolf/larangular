@@ -1,3 +1,53 @@
+###Grunt setup and initialization
+Grunt is a javascript task runner well equipped to work with bower.
+
+##Installation
+1) Install node.js http://nodejs.org/
+2) within your bash/shell "npm install -g grunt"
+
+##Usage
+We use a laravel package for managing grunt operations which also ties into Bower.
+Please refer to: https://github.com/JasonMortonNZ/laravel-grunt
+
+To configure please complete composer update and then modify
+
+
+### Bower setup and initialization
+Bower "a package manager for the web" is a package manager.
+It is designed to make adding css and javascript packages easy to install to your project.
+
+##Installation
+1) Install node.js http://nodejs.org/
+2) within your bash/shell "npm install -g bower"
+
+##Finding Packages
+use the command bower search <package name> to do a text search for a given package
+
+##Adding Packages
+you can either modify the bower.json file or do one of the following commands:
+bower install <package name> -S
+bower install <package name> -D
+
+the -D is for the development environment only
+
+
+
+
+
+### Vagrant Setup and Initialization
+a vagrant file is included with this package to make development easier for everyone involved.
+You should add Vagrantfile and the puphpet directory to your .gitignore if you wish not to share your build file with everyone
+
+To configure your build further please refer to puphpet/config.yml and Vagrantfile
+
+By default your package ip will be 192.168.56.101
+
+you MUST modify your host file to point larangular.dev to 192.168.56 for local development
+
+You may modify these variables within phuphpet/config.yml
+
+
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)

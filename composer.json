@@ -6,8 +6,17 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-        "cboden/ratchet": "dev-master"
+        "brainboxlabs/brain-socket": "v1.0.0",
+        "kriswallsmith/assetic": "1.2.0",
+        "zendframework/zend-stdlib": "2.3.3"
 	},
+    "require-dev": {
+        "way/generators": "~3.0",
+        "behat/behat": "3.0.14",
+        "phpunit/phpunit": "4.3.4",
+        "phpunit/php-code-coverage": "2.0.11",
+        "phpunit/phpunit-mock-objects": "2.4.*@dev"
+    },
 	"autoload": {
 		"classmap": [
 			"app/commands",
