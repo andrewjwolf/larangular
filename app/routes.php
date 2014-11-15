@@ -10,11 +10,5 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
-Route::get('/', function()
-{
-	return View::make('index/index');
-});
-
-
+Route::get('/', array('as' => 'home', 'uses' => 'HomeController@index'));
 Route::resource('user','UserController');

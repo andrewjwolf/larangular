@@ -121,6 +121,9 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+        'Larangular\Controllers\ControllerServiceProvider',
+        'Larangular\Models\ModelServiceProvider',
+        'Larangular\Repositories\RepositoryServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
 	),
 
