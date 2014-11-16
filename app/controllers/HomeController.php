@@ -13,7 +13,8 @@ class HomeController extends BaseController {
 	public function index()
 	{
         echo $this->meta->test();
-		return View::make('hello');
+		Event::fire('home.view');
+		Event::fire('user.testevent');
 	}
 
 }
