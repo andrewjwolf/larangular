@@ -1,0 +1,27 @@
+{
+    "name": "larangular/user",
+    "description": "",
+    "authors": [
+        {
+            "name": "Andrew Wolf",
+            "email": "a.james.wolf@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/controllers",
+            "src/repositories",
+            "src/models"
+        ],
+        "psr-0": {
+            "Larangular\\User\\": "src/",
+            "Larangular\\User\\Controllers": "src/controllers"
+        }
+    },
+    "minimum-stability": "stable"
+}
