@@ -1,5 +1,5 @@
 {
-    "name": "larangular/user",
+    "name": "larangular/page",
     "description": "",
     "authors": [
         {
@@ -19,7 +19,7 @@
             "src/repositories"
         ],
         "psr-0": {
-            "Larangular\\User\\": "src/"
+            "Larangular\\Page\\": "src/"
         }
     },
     "minimum-stability": "stable"

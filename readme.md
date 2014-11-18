@@ -4,6 +4,31 @@
 - Provide a consistent workflow for developing new features
 - Couple the most modern technologies with the most modern frameworks
 
+#Working with Modules
+- You may create your own modules/ modify exiting modules or disable modules at any time without impacting other modules that are not dependant
+
+##Creating a Module
+- php artisan workbench vendor/package --resources
+- navigate to your directory
+- Within workbench/<namespace>/<package>/src/<package> create ControllerServiceProvider.php , EventServiceProvider.php, ModelServiceProvider.php, RepositoryServiceProvider @todo override workbench method to create these
+- Within workbench/<namespace>/<package>/src/package/<PackageServiceProvider>.php update boot and provides methods to alias the packages service, and include the above mentioned service providers
+- Within workbench/<namespace>/<package>/composer.json add autoload classmap for "src/controllers", "src/migrations , "src/models", and "src/repositories",
+- Within workbench/<namespace>/<package>/src add the folders "models", "repositories",
+- Navigate to workbench/<namespace>/<package> within shell and run "composer dumpautoload"
+- Update app/config/app.php and add your modules primary service provider to the providers array
+- Navigate to the root directory of your application; within shell run the command php-artisan dump-autoload
+
+
+
+
+
+##Starting Modules
+- user - see workbench/larangular/user
+This module is designed to handle common user tasks such as login, logout, register, reset
+- page - see workbench/larangular/page
+This module is designed to house page related values such as layout, content, meta information,etc.
+
+
 
 ###Grunt setup and initialization
 Grunt is a javascript task runner well equipped to work with bower.
