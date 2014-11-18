@@ -1,3 +1,10 @@
+#Purpose
+- Provide a common workplace for developing applications using the laravel framework.
+- Provide documented strategies and bootstrapping for dealing with common needs.
+- Provide a consistent workflow for developing new features
+- Couple the most modern technologies with the most modern frameworks
+
+
 ###Grunt setup and initialization
 Grunt is a javascript task runner well equipped to work with bower.
 
